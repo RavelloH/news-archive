@@ -10,7 +10,7 @@ const rlog = new RLog({
 async function main() {
   rlog.log("Start to get news ...");
   try {
-    let origin = await fetch("http://bridge.ravelloh.top/60s-api.viki.moe/v2/60s")
+    let origin = await fetch("http://60s-api.viki.moe/v2/60s")
       .then((res) => res.json())
       .then((res) => {
         return res;
@@ -45,6 +45,8 @@ async function main() {
     }
 
     fs.writeFileSync(filePath, JSON.stringify(newsData, null, 2));
+    fs.writeFileSync("./latest.json", JSON.stringify(newsData, null, 2));
+
     rlog.success("Save news successfully.");
   } catch (error) {
     rlog.error(error.message);
