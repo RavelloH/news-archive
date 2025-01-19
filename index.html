@@ -225,7 +225,7 @@
             }
 
             async function fetchLatestNews() {
-                fetchNews('/latest.json');
+                fetchNews('latest.json');
             }
 
             async function fetchNewsByDate() {
@@ -324,7 +324,7 @@
                 if (date) {
                     if (isValidDate(date)) {
                         const [year, month, day] = [date.slice(0, 4), date.slice(4, 6), date.slice(6, 8)];
-                        const url = `/data/${year}/${month}/${day}.json`;
+                        const url = `data/${year}/${month}/${day}.json`;
                         fetchNews(url);
                         dateInput.value = `${year}-${month}-${day}`;
                     } else {
