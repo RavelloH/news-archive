@@ -16,7 +16,7 @@ travel("./data", (pathname) => {
   let data = fs.readFileSync(pathname, "utf8");
   let json = JSON.parse(data);
   indexSearch.data.push({
-    src: pathname.replace(/\\/g, "/").replaceAll("data/", ""),
+    src: pathname.replace(/\\/g, "/").replaceAll("data/", "").replaceAll(".json", ""),
     content: json.content.join("\n"),
   });
 });
