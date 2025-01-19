@@ -1,4 +1,9 @@
 # EverydayNews
+> [!WARNING]    
+> 此仓库仅为[RavelloH/EverydayNews](https://github.com/RavelloH/EverydayNews)v1版本的备份，不再更新。  
+> 新版本内容请到原仓库[https://github.com/RavelloH/EverydayNews](https://github.com/RavelloH/EverydayNews)
+
+
 [![update](https://github.com/RavelloH/EverydayNews/actions/workflows/main.yml/badge.svg)](https://github.com/RavelloH/EverydayNews/actions/workflows/main.yml)  
 每日早4点(UTC+8)更新当日新闻，图片格式储存，并附带在线搜索、索引页。
 
