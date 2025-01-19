@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      index-search:
+        specifier: ^1.0.0
+        version: 1.0.0
       moment:
         specifier: ^2.30.1
         version: 2.30.1
@@ -45,6 +48,9 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+
+  index-search@1.0.0:
+    resolution: {integrity: sha512-qtt28uML4xBISRhr4hOUHCkTxd6L1sYgfRsz5CWMJKJgGPiMRuDlpOGapPUYo8T6pxWxpGc8zv51h/+dZgrDmw==}
 
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
@@ -99,6 +105,10 @@ snapshots:
   graceful-fs@4.2.11: {}
 
   has-flag@4.0.0: {}
+
+  index-search@1.0.0:
+    dependencies:
+      rlog-js: 1.4.2
 
   jsonfile@6.1.0:
     dependencies:
